@@ -1,0 +1,44 @@
+.heading {
+  position: relative;
+  margin: 16rem 0 8rem;
+  & > * {
+    width: max-content;
+    margin: 0 auto;
+    border: solid 2px black;
+    padding: 5px 1rem;
+  }
+  h3 {
+    animation: moveInLeft 1s ease-in-out;
+    box-shadow: 6px 6px black;
+    font-size: 3.5rem;
+    font-weight: 200;
+  }
+  h1 {
+    animation: moveInRight 1s ease-in-out;
+    font-size: 3rem;
+    transform: translateX(32%);
+  }
+}
+
+.cta {
+  width: fit-content;
+  margin: 0 auto;
+  span {
+    font-weight: bold;
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+@keyframes moveInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+@keyframes moveInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
