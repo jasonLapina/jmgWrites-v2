@@ -2,7 +2,7 @@ import classes from './Header.module.scss';
 import Button from '../UI/Button';
 function Header() {
   return (
-    <section>
+    <section className={classes.section}>
       <div className={classes.heading}>
         <h3>
           Want to level up your marketing <br />
