@@ -1,10 +1,16 @@
+import classes from './Hero.module.scss';
+import hero from '../../assets/hero.png';
 function Hero() {
   return (
-    <section>
-      <div></div>
-      <div>
+    <section className={classes.section}>
+      <div className={classes['img-box']}>
+        <img src={hero} alt='Jelanie Gapas' />
+        <span>Jelanie Gapas, Copywriter.</span>
+      </div>
+      <div className={classes['txt-box']}>
         <h1>
-          Hey there, <strong>it's Jel!</strong>
+          Hey there<span className={classes.emoji}>👋</span>,<br />{' '}
+          <strong>it's Jel!</strong>
         </h1>
         <p>
           In my 20+ years of existence, I've probably spent most of my time

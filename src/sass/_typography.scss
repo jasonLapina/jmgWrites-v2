@@ -1,7 +1,14 @@
 %heading {
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 h1 {
   @extend %heading;
-  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+h3 {
+  @extend %heading;
+  font-size: 3.2rem;
 }

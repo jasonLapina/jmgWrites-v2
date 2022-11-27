@@ -1,0 +1,65 @@
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5.6rem;
+}
+
+.img-box {
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+  position: relative;
+  span {
+    position: absolute;
+    background-color: black;
+    width: 60%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.5s;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover span {
+    opacity: 1;
+    visibility: visible;
+  }
+  img {
+    transition: all 0.5s;
+  }
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+.txt-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  h1 {
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+.emoji {
+  animation: wave 0.5s ease-in-out infinite alternate;
+  transform: translateY(-4px);
+  display: inline-block;
+}
+
+@keyframes wave {
+  from {
+    rotate: 10deg;
+  }
+  to {
+    rotate: -5deg;
+  }
+}
