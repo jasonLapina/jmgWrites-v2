@@ -1,0 +1,23 @@
+.heading {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.ctrl {
+  background-color: black;
+  width: 8rem;
+  margin: auto 0;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.img {
+  aspect-ratio: 2/1;
+  margin: 0 auto;
+  max-height: 48rem;
+}
+
+.caption {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
+}

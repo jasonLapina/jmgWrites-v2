@@ -1,3 +1,4 @@
+import Cta from './components/CTA/Cta';
 import Features from './components/Features/Features';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -9,6 +10,7 @@ function App() {
       <Hero />
       <Features />
       <Portfolio />
+      <Cta />
     </div>
   );
 }
