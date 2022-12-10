@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import classes from './How.module.scss';
 function HowItWorks() {
+  const [activeIndex, setActiveIndex] = useState(1);
+
   return (
     <div className={classes.container}>
-      <div>
+      <div className={classes.content}>
         <h3>𝟭. 𝗦𝘁𝗿𝗮𝘁𝗲𝗴𝘆 𝗳𝗶𝗿𝘀𝘁, 𝗰𝗼𝗽𝘆 𝘀𝗲𝗰𝗼𝗻𝗱.</h3>
         <p>
           🌀We’ll hop on a quick 15 to 30-minute call to talk about how I can
@@ -20,7 +23,7 @@ function HowItWorks() {
           Timeline, Deliverables, and Copy Quote.
         </p>
       </div>
-      <div>
+      <div className={`${classes.content} ${classes.hidden}`}>
         <h3>𝟮. 𝗔 𝗰𝗼𝗽𝘆 𝘁𝗵𝗮𝘁 𝗶𝘀 𝗱𝗼𝗻𝗲 𝗿𝗶𝗴𝗵𝘁 𝘁𝗵𝗲 𝗳𝗶𝗿𝘀𝘁 𝘁𝗶𝗺𝗲.</h3>
         <p>
           🌀Writing your copy comes with finding your brand voice, market and
@@ -32,6 +35,8 @@ function HowItWorks() {
           comes up!
         </p>
       </div>
+      <button className={`${classes.btn} ${classes['btn--prev']}`}>prev</button>
+      <button className={`${classes.btn} ${classes['btn--next']}`}>next</button>
     </div>
   );
 }

@@ -2,7 +2,42 @@
   margin-top: 3.2rem;
   margin-inline: auto;
   max-width: 60rem;
-  aspect-ratio: 2/1;
+  height: 48rem;
   border: solid 4px black;
   box-shadow: 1rem 1rem black;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  padding: 2rem 4rem;
+  h3 {
+    margin-bottom: 2rem;
+  }
+}
+
+.active {
+}
+
+.hidden {
+  transform: translateX(100%);
+}
+
+.btn {
+  width: 4rem;
+  height: 4rem;
+  z-index: 2;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &--next {
+    right: 0%;
+    background-color: red;
+  }
+  &--prev {
+    left: 0%;
+  }
 }
