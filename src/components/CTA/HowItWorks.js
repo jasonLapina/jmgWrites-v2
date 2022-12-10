@@ -12,12 +12,6 @@ function HowItWorks() {
           help you make the most out of your email list.
         </p>
         <p>
-          Book a FREE audit with me at:
-          https://calendly.com/jmgwrites/discovery-call (𝘐𝘧 𝘺𝘰𝘶’𝘳𝘦 𝘴𝘰𝘮𝘦𝘰𝘯𝘦 𝘸𝘩𝘰
-          𝘥𝘰𝘦𝘴𝘯’𝘵 𝘭𝘪𝘬𝘦 𝘣𝘦𝘪𝘯𝘨 𝘰𝘯 𝘢 𝘤𝘢𝘭𝘭, 𝘺𝘰𝘶 𝘤𝘢𝘯 𝘴𝘦𝘯𝘥 𝘮𝘦 𝘢 𝘮𝘦𝘴𝘴𝘢𝘨𝘦 𝘷𝘪𝘢 𝘦𝘮𝘢𝘪𝘭
-          𝘪𝘯𝘴𝘵𝘦𝘢𝘥: 𝘫𝘦𝘭𝘢𝘯𝘪𝘦@𝘫𝘮𝘨𝘸𝘳𝘪𝘵𝘦𝘴.𝘪𝘯𝘧𝘰, 𝘢𝘯𝘥 𝘸𝘦 𝘤𝘢𝘯 𝘵𝘢𝘭𝘬 𝘵𝘩𝘦𝘳𝘦.)
-        </p>
-        <p>
           🌀To keep us both on the same page, we’ll finalize everything through
           a strategy document which would contain the following: Project
           Timeline, Deliverables, and Copy Quote.
@@ -35,8 +29,12 @@ function HowItWorks() {
           comes up!
         </p>
       </div>
-      <button className={`${classes.btn} ${classes['btn--prev']}`}>prev</button>
-      <button className={`${classes.btn} ${classes['btn--next']}`}>next</button>
+      <button className={`${classes.btn} ${classes['btn--prev']}`}>
+        <ion-icon name='chevron-back-outline' />
+      </button>
+      <button className={`${classes.btn} ${classes['btn--next']}`}>
+        <ion-icon name='chevron-forward-outline' />
+      </button>
     </div>
   );
 }
@@ -48,8 +46,6 @@ export default HowItWorks;
 𝟭. 𝗦𝘁𝗿𝗮𝘁𝗲𝗴𝘆 𝗳𝗶𝗿𝘀𝘁, 𝗰𝗼𝗽𝘆 𝘀𝗲𝗰𝗼𝗻𝗱.
 🌀We’ll hop on a quick 15 to 30-minute call to talk about how I can help you make the most out of your email list.
 
-Book a FREE audit with me at: https://calendly.com/jmgwrites/discovery-call
-(𝘐𝘧 𝘺𝘰𝘶’𝘳𝘦 𝘴𝘰𝘮𝘦𝘰𝘯𝘦 𝘸𝘩𝘰 𝘥𝘰𝘦𝘴𝘯’𝘵 𝘭𝘪𝘬𝘦 𝘣𝘦𝘪𝘯𝘨 𝘰𝘯 𝘢 𝘤𝘢𝘭𝘭, 𝘺𝘰𝘶 𝘤𝘢𝘯 𝘴𝘦𝘯𝘥 𝘮𝘦 𝘢 𝘮𝘦𝘴𝘴𝘢𝘨𝘦 𝘷𝘪𝘢 𝘦𝘮𝘢𝘪𝘭 𝘪𝘯𝘴𝘵𝘦𝘢𝘥: 𝘫𝘦𝘭𝘢𝘯𝘪𝘦@𝘫𝘮𝘨𝘸𝘳𝘪𝘵𝘦𝘴.𝘪𝘯𝘧𝘰, 𝘢𝘯𝘥 𝘸𝘦 𝘤𝘢𝘯 𝘵𝘢𝘭𝘬 𝘵𝘩𝘦𝘳𝘦.)
 
 🌀To keep us both on the same page, we’ll finalize everything through a strategy document which would contain the following: Project Timeline, Deliverables, and Copy Quote.
 
