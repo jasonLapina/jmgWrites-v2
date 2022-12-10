@@ -1,0 +1,14 @@
+.form {
+  & > * {
+    font-size: 1.8rem;
+  }
+}
+
+.input {
+  font-size: 1.8rem;
+}
+
+.textarea {
+  height: fit-content;
+  height: 16rem;
+}

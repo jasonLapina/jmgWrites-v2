@@ -1,6 +1,6 @@
 .section {
   display: grid;
-  grid-template-columns: 4fr 6fr;
+  grid-template-columns: 6fr 4fr;
   gap: 4.8rem;
 }
 
@@ -11,17 +11,25 @@
   }
 }
 
-.container {
-  margin-top: 3.2rem;
-  width: 60rem;
-  aspect-ratio: 2/1;
-  border: solid 4px black;
-  box-shadow: 1rem 1rem black;
-}
-
 .right {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  padding: 0 2rem;
+}
+
+.cta {
+  padding: 1rem 2rem;
+  border-radius: 2.4rem;
+  background-color: black;
+  border: none;
+  color: white;
+  margin-bottom: 2.4rem;
+}
+
+.interested {
+  display: block;
+  margin-bottom: 1.6rem;
+  margin-top: 2.4rem;
 }

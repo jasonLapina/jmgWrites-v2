@@ -8,10 +8,11 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 import facebook from '../../assets/Facebook.jpg';
+import email from '../../assets/email.webp';
 
 const items = [
   {
-    src: facebook,
+    src: email,
     caption: 'Email Copy',
     key: 1,
     alt: 'email copy',
@@ -62,6 +63,7 @@ function Portfolio(args) {
       </div>
 
       <Carousel
+        className={classes.carousel}
         ride={false}
         activeIndex={activeIndex}
         next={next}
