@@ -2,10 +2,11 @@
   margin-top: 3.2rem;
   margin-inline: auto;
   max-width: 80rem;
-  height: 48rem;
+  height: 44rem;
   border: solid 4px black;
   box-shadow: 1rem 1rem black;
   position: relative;
+  background-image: url(../../assets/background.png);
 }
 
 .steps-wrapper {
@@ -19,6 +20,8 @@
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  background-color: white;
+  padding: 1rem;
 }
 
 .step {

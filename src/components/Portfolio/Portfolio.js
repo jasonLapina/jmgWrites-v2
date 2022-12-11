@@ -56,7 +56,7 @@ function Portfolio(args) {
   });
 
   return (
-    <section>
+    <section className={classes.section} id='portfolio'>
       <div className={classes.heading}>
         <h3>You know what they say...</h3>
         <h1>the proof is in the portfolio!</h1>

@@ -3,7 +3,7 @@ import Button from '../../components/UI/Button';
 
 function Features() {
   return (
-    <section className={classes.section}>
+    <section id='benefits' className={classes.section}>
       <div className={classes.left}>
         <div className={classes.heading}>
           <h3>Enough about me.</h3>

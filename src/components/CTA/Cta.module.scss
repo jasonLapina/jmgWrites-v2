@@ -33,3 +33,28 @@
   margin-bottom: 1.6rem;
   margin-top: 2.4rem;
 }
+
+.heading {
+  font-size: 3rem;
+  font-family: 'Arimo', sans-serif;
+}
+
+.subheading {
+  font-size: 1.8rem;
+  display: block;
+  font-family: 'Arimo', sans-serif;
+  width: fit-content;
+  margin: 0 auto 6.4rem;
+}
+
+.socials {
+  margin-top: 4rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: end;
+  gap: 2.4rem;
+  img {
+    max-width: 5.6rem;
+    aspect-ratio: 1/1;
+  }
+}

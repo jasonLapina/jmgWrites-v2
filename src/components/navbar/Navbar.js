@@ -3,7 +3,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
@@ -11,8 +10,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText,
 } from 'reactstrap';
+import classes from './Navbar.module.scss';
 
 function NavBar(args) {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,36 +19,28 @@ function NavBar(args) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar expand {...args}>
-        <NavbarBrand href='/'>reactstrap</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className='me-auto' navbar>
-            <NavItem>
-              <NavLink href='/components/'>Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href='https://github.com/reactstrap/reactstrap'>
-                GitHub
-              </NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>Simple Text</NavbarText>
-        </Collapse>
-      </Navbar>
-    </div>
+    <Navbar color='dark' fixed='top' dark expand {...args}>
+      <NavbarToggler onClick={toggle} />
+      <Collapse isOpen={isOpen} navbar>
+        <Nav className={classes.navbar} navbar>
+          <NavItem>
+            <NavLink href='/'>Home</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href='#about'>About Me</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href='#benefits'>Benefits</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href='#portfolio'>Portfolio</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href='#cta'>Work with me</NavLink>
+          </NavItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 }
 

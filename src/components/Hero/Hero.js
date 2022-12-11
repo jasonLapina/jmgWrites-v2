@@ -2,7 +2,7 @@ import classes from './Hero.module.scss';
 import hero from '../../assets/hero.png';
 function Hero() {
   return (
-    <section className={classes.section}>
+    <section id='about' className={classes.section}>
       <div className={classes['img-box']}>
         <img src={hero} alt='Jelanie Gapas' />
         <span>Jelanie Gapas, Copywriter.</span>
