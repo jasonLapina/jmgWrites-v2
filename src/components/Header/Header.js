@@ -12,7 +12,9 @@ function Header() {
       </div>
       <div className={classes.cta}>
         <span>Better yet,</span>
-        <Button>Let Jel do the copy &rarr;</Button>
+        <a href='#cta'>
+          <Button>Let Jel do the copy &rarr;</Button>
+        </a>
       </div>
     </section>
   );

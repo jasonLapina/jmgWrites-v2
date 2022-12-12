@@ -45,7 +45,9 @@ function Features() {
             Perfect <strong>ROI</strong> formula for you!
           </em>
         </p>
-        <Button className={classes.btn}>Let Jel do the copy &rarr;</Button>
+        <a href='#cta'>
+          <Button className={classes.btn}>Let Jel do the copy &rarr;</Button>
+        </a>
       </div>
     </section>
   );

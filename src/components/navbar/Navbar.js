@@ -6,10 +6,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
 } from 'reactstrap';
 import classes from './Navbar.module.scss';
 
@@ -19,7 +15,7 @@ function NavBar(args) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color='dark' fixed='top' dark expand {...args}>
+    <Navbar color='dark' fixed='top' dark expand='md' {...args}>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className={classes.navbar} navbar>

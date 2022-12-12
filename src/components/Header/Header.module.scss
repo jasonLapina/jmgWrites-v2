@@ -1,8 +1,8 @@
+@use '../../sass/mixins' as *;
 .section {
   background-image: url(../../assets/background.png);
   max-width: 200rem;
   position: relative;
-  z-index: -2;
 }
 .heading {
   position: relative;
@@ -25,6 +25,9 @@
     animation: moveInRight 1s ease-in-out;
     font-size: 3rem;
     transform: translateX(32%);
+    @include query(tabPort) {
+      transform: translateX(8%);
+    }
   }
 }
 

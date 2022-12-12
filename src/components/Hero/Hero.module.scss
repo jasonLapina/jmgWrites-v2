@@ -1,8 +1,14 @@
+@use '../../sass/mixins' as *;
+
 .section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 5.6rem;
+  @include query(tabPort) {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
 }
 
 .img-box {
@@ -11,6 +17,10 @@
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
   position: relative;
+  @include query(tabPort) {
+    width: 50%;
+    margin: 0 auto;
+  }
   span {
     position: absolute;
     background-color: black;
